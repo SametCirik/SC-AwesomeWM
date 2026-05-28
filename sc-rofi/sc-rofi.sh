@@ -38,7 +38,7 @@ case "$SELECTION" in
         ~/.config/awesome/sc-rofi/scripts/audio.sh
         ;;
     *"Duvar Kağıdı"*)
-        notify-send "SC-ROFI" "🖼 Wallpaper (Yapım Aşamasında)"
+        ~/.config/awesome/sc-rofi/scripts/wallpaper.sh
         ;;
     *"Tema Değiştir"*)
         notify-send "SC-ROFI" "🎨 Tema (Yapım Aşamasında)"

@@ -765,12 +765,20 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
--- Başlangıçta çalışacak uygulamalar (Autostart)
-awful.spawn.with_shell("picom -b")
--- Bilgisayar 5 dakika boşta (idle) kalırsa otomatik olarak blur efektiyle kilitle
-awful.spawn.with_shell("xautolock -time 5 -locker 'betterlockscreen -l blur' -detectsleep &")
--- Cava'yı Alacritty içinde "cava_desktop" ismiyle çalıştır. (1. masaüstünde kalır)
-awful.spawn.with_shell("alacritty --class cava_desktop -e cava &")
+-- =========================================
+-- AKILLI BAŞLANGIÇ (ZOMBİ KORUMALI AUTOSTART)
+-- =========================================
+-- pgrep ile programın zaten çalışıp çalışmadığı kontrol edilir. 
+-- Sadece çalışmıyorsa (||) yeni bir tane başlatılır. Bu sayede RAM sızıntısı önlenir.
+
+-- Picom (Şeffaflık ve Blur)
+awful.spawn.with_shell("pgrep -u $USER -x picom > /dev/null || picom -b")
+
+-- Xautolock (5 dakika boşta kalınca ekranı kilitle)
+awful.spawn.with_shell("pgrep -u $USER -x xautolock > /dev/null || xautolock -time 5 -locker 'betterlockscreen -l blur' -detectsleep &")
+
+-- Cava (Masaüstü Ses Spektrumu)
+awful.spawn.with_shell("pgrep -u $USER -x cava > /dev/null || alacritty --class cava_desktop -e cava &")
 
 -- MASAÜSTÜ WIDGET KONTROLÜ (Dashboard Mantığı)
 tag.connect_signal("property::selected", function(t)
