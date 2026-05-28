@@ -174,19 +174,18 @@ Daha sonra sistem oturumunu kapatığ geri açın.
 
 ## 8. Lisans
 
-Bu proje **MIT Lisansı** ile lisanslanmıştır. Detaylar için `LICENCE` dosyasına göz atabilirsiniz. Özgürce kullanın, bozun, parçalayın ve yeniden yapın!
+Bu proje **MIT Lisansı** ile lisanslanmıştır. Detaylar için `LICENCE` dosyasına göz atabilirsiniz.
 
 ## 9. Fork & Katkı
 
-Fork serbest mi? **Kesinlikle evet!**
+Bu yapılandırmayı kendi zevkinize göre çatallayabilir (fork), renklerini değiştirebilir veya projeye doğrudan katkıda bulunabilirsiniz! Topluluğun desteğine ve kodlamasına özellikle ihtiyaç duyduğum iki ana konu bulunuyor:
 
-- Bu yapılanmayı (rice) kendi zevkinize göre çatallayabilir (fork), 
+- **Wi-Fi Menüsü Düzeltmesi:** Sağ adada yer alan Wi-Fi menü arayüzü şu an stabil çalışmıyor. Eğer bu modülü düzelten veya daha iyi bir ağ yöneticisi entegre eden bir yama geliştirirseniz, lütfen katkılarınızı `wifi-bug-fix` branch'ine (dalına) Pull Request (PR) olarak gönderin.
+- **SC-Rofi Eksik Betikleri:** SC-Rofi kontrol merkezindeki bazı seçenekler (örn. "Tema Değiştir", "Güç Menüsü") henüz yapım aşamasında. Bu kabuk betiklerini (shell scripts) tamamlamak, geliştirmek veya yepyeni menü modülleri eklemek isterseniz, katkılarınızı `sc-rofi-modules` branch'ine iletebilirsiniz.
 
-- renklerini değiştirebilir, 
+Özgürce kullanın, bozun, parçalayın ve yeniden yapın!
 
-- SC-Rofi için yepyeni modüller yazabilir 
-
-- veya kendi widget'larınızı ekleyebilirsiniz. 
+### 
 
 ## 10. Aksiyon Halinde Görün!
 
