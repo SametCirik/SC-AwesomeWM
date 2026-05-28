@@ -1,0 +1,107 @@
+/* SC-ROFI - Şeffaf Siberpunk Panel Tema */
+
+configuration {
+    font: "Courier Prime Bold 12";
+    show-icons: true;
+    drun-display-format: "{name}";
+}
+
+* {
+    /* Renk Paletimiz (Temaya sadık kalınarak) */
+    bg:       #111111D9; /* %85 Şeffaf Koyu Arka Plan */
+    fg:       #bbbbbb;   /* Açık Gri Metinler */
+    selected: #FF8800;   /* Neon Turuncu Vurgu */
+    bg-alt:   #222222F2; /* %95 Şeffaf İkincil Koyu */
+
+    background-color: transparent;
+    text-color: @fg;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    transparency: "real"; /* Şeffaflığı aktif eden sihirli kod */
+    fullscreen: false;    /* TAM EKRAN KAPATILDI */
+    width: 900px;         /* Panelin genişliği */
+    location: center;     /* Ekranın tam ortasında belirir */
+    anchor: center;
+    background-color: @bg; /* Şeffaf siyah arka plan */
+    border: 2px;          /* Temaya uygun turuncu çerçeve */
+    border-color: @selected;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing: 40px;
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    background-color: @bg-alt;
+    border: 2px;
+    border-color: @selected;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 0 0 10px 0; /* Arama çubuğunu listeview'den ayırır */
+}
+
+prompt {
+    enabled: true;
+    padding: 0 15px 0 0;
+    text-color: @selected;
+    font: "Courier Prime Bold 14";
+}
+
+entry {
+    placeholder: "/> BEKLEMEDE...";
+    placeholder-color: #555555;
+    text-color: @foreground;
+    font: "Courier Prime Bold 14";
+    vertical-align: 0.5;
+}
+
+listview {
+    columns: 3;          /* 6 eleman için kusursuz 3 sütun */
+    lines: 2;            /* 2 satır (Toplam 3x2=6 kutu) */
+    spacing: 30px;       /* Kutular arası boşluk */
+    cycle: true;
+    dynamic: false;
+    layout: vertical;
+}
+
+element {
+    orientation: vertical;
+    padding: 25px 10px;
+    border-radius: 10px;
+    background-color: @bg-alt; /* Kutuların normal arka planı */
+    border: 1px;          /* Daha ince bir çerçeve */
+    border-color: #444444; /* Pasif gri çerçeve */
+}
+
+element selected.normal {
+    background-color: @bg-alt;
+    border-color: @selected; /* Seçilince daha parlak bir beyaz çerçeve */
+    text-color: @selected;
+}
+
+element-icon {
+    size: 64px;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    margin: 0 0 15px 0;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    font: "Courier Prime Bold 13";
+    text-color: inherit;
+}
+
+element-text selected.normal {
+    background-color: transparent;
+    text-color: @selected;
+}
