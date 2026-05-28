@@ -184,11 +184,20 @@ Bu yapılandırmayı kendi zevkinize göre çatallayabilir (fork), renklerini de
 - **SC-Rofi Eksik Betikleri:** SC-Rofi kontrol merkezindeki bazı seçenekler (örn. "Tema Değiştir", "Güç Menüsü") henüz yapım aşamasında. Bu kabuk betiklerini (shell scripts) tamamlamak, geliştirmek veya yepyeni menü modülleri eklemek isterseniz, katkılarınızı `sc-rofi-modules` branch'ine iletebilirsiniz.
 
 Özgürce kullanın, bozun, parçalayın ve yeniden yapın!
-
-### 
-
 ## 10. Aksiyon Halinde Görün!
 
 Sistemin çalışırken nasıl göründüğünü, animasyonları, Cava senkronizasyonunu ve SC-Rofi modüllerini görmek için aşağıdaki Reddit gönderimi inceleyebilirsiniz:
 
+## 11. Ekran Görüntüleri
 
+<p align="center">
+  <img width="1920" height="1080" alt="Ekran Görüntüsü_20260528_172152" src="https://github.com/user-attachments/assets/d0500c7b-a700-48da-9af7-12c1be61f1d5" />
+  <br>
+  <img width="1920" height="1080" alt="Ekran Görüntüsü_20260528_172343" src="https://github.com/user-attachments/assets/afd23489-85a3-467b-a1ef-ce62828bf441" />
+  <br>
+  <img width="1920" height="1080" alt="Ekran Görüntüsü_20260528_173113" src="https://github.com/user-attachments/assets/81fa8476-a72d-41bc-a43a-00730ab34293" />
+  <br>
+  <img width="1920" height="1080" alt="Ekran Görüntüsü_20260528_173447" src="https://github.com/user-attachments/assets/859f0faf-98ae-49ab-96bc-881ab32f8cdd" />
+  <br>
+  <img width="1920" height="1080" alt="Ekran Görüntüsü_20260528_173221-1" src="https://github.com/user-attachments/assets/f12f3853-b382-4730-ba65-98a29d916c3d" />
+</p>
